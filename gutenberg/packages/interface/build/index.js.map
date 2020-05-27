@@ -1,0 +1,1 @@
+{"version":3,"sources":["@wordpress/interface/src/index.js"],"names":[],"mappings":";;;;;;AAGA;;AAEA;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA","sourcesContent":["/**\n * Internal dependencies\n */\nimport './store';\n\nexport * from './components';\n"]}

@@ -1,0 +1,23 @@
+.editor-post-last-revision__title {
+	width: 100%;
+	font-weight: 600;
+
+	.dashicon {
+		margin-right: 5px;
+	}
+}
+
+.components-button.editor-post-last-revision__title {
+	height: auto;
+
+	&:hover,
+	&:active {
+		// Override the default button hover style
+		background: $light-gray-200;
+	}
+
+	&:focus {
+		box-shadow: inset 0 0 0 $border-width-focus $theme-color;
+		border-radius: 0;
+	}
+}

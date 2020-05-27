@@ -1,0 +1,1 @@
+{"version":3,"sources":["@wordpress/edit-site/src/store/defaults.js"],"names":["PREFERENCES_DEFAULTS","features","fullscreenMode"],"mappings":";;;;;;AAAO,IAAMA,oBAAoB,GAAG;AACnCC,EAAAA,QAAQ,EAAE;AACTC,IAAAA,cAAc,EAAE;AADP;AADyB,CAA7B","sourcesContent":["export const PREFERENCES_DEFAULTS = {\n\tfeatures: {\n\t\tfullscreenMode: true,\n\t},\n};\n"]}

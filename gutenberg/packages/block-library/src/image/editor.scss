@@ -1,0 +1,69 @@
+figure.wp-block-image:not(.wp-block) {
+	margin: 0;
+}
+
+.wp-block-image {
+	position: relative;
+
+	&.is-transient img {
+		opacity: 0.3;
+	}
+
+	figcaption img {
+		display: inline;
+	}
+
+	// Shown while image is being uploaded
+	.components-spinner {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -9px;
+		margin-left: -9px;
+	}
+}
+
+// This is necessary for the editor resize handles to accurately work on a non-floated, non-resized, small image.
+.wp-block-image .components-resizable-box__container img {
+	display: block;
+	width: inherit;
+	height: inherit;
+}
+
+.block-editor-block-list__block[data-type="core/image"] .block-editor-block-toolbar .block-editor-url-input__button-modal {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: -$border-width 0;
+
+	@include break-small() {
+		margin: -$border-width;
+	}
+}
+
+[data-align="wide"] > .wp-block-image,
+[data-align="full"] > .wp-block-image {
+	img {
+		width: 100%;
+	}
+}
+
+.wp-block[data-align="left"] > .wp-block-image {
+	margin-right: 1em;
+	margin-left: 0;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.wp-block[data-align="right"] > .wp-block-image {
+	margin-left: 1em;
+	margin-right: 0;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.wp-block[data-align="center"] > .wp-block-image {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["@wordpress/interface/src/store/constants.js"],"names":["STORE_KEY"],"mappings":"AAAA;;;;;AAKA,OAAO,IAAMA,SAAS,GAAG,gBAAlB","sourcesContent":["/**\n * The identifier for the data store.\n *\n * @type {string}\n */\nexport const STORE_KEY = 'core/interface';\n"]}
